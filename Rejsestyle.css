@@ -1,0 +1,225 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+header{    background-color: rgb(17, 17, 16);
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    font-family: 'Racing Sans One', cursive;
+    box-shadow: 15px 15px 15px rgb(62, 68, 62);
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgb(62, 68, 62);
+ }
+
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 4em;
+    color: rgb(247, 251, 239);
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    position:fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+.showMenu {
+    transform: translateY(0);
+}
+
+h2 {
+display: flex;
+justify-content: space-around;
+}
+body { 
+font-family: 'Racing Sans One', cursive;
+background:url('https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+background-size:cover;
+background-repeat:repeat;
+color:#000;
+}
+
+section{
+    column-count: 2;
+    padding: 2em;
+}
+h3{
+    padding-block: 5em;
+    width: 100;
+    padding: 2em;
+    background: rgba(93, 90, 89, 0.5);
+    color: white;
+    border: #000 solid;
+    text-shadow: 5px 5px 10px #000000;
+}
+    
+.main {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.wheel {
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    overflow: hidden;
+    transition: all ease 4s;
+    padding: 2em;
+    box-shadow: 15px 15px 30px rgb(62, 62, 62);
+}
+span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+.span1 {
+   clip-path: polygon(0 92%, 100% 50%, 0 8%);
+   background-color: #ff1f1f;
+   top: 120px;
+   left: 0;
+}
+.span2 {
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #19e3cf; 
+    top: 120px;
+    right: 0;
+ }
+ .span3 {
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #9e0bf3;
+    bottom: 0;
+    left: 120px;
+ }
+ .span4 {
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #15b600;
+    top: 0;
+    left: 120px;
+ }
+.span5 {
+    clip-path: polygon(0 40%, 100% 0%, 60% 100%);
+    background-color: #1f26ff; 
+    bottom: -2px; 
+    right: 242px;
+ }
+.span6 {
+    clip-path: polygon(40% 100%, 0 0%, 100% 40%);
+    background-color: #ff5a5a;
+    bottom: -2px;
+    left: 242px;
+ }
+ .span7 {
+    clip-path: polygon(60% 0, 100% 100%, 0 60%); 
+    background-color: #57fff1;
+    top: -2px;
+    right: 242px; 
+ }
+ .span8 {
+    clip-path: polygon(0 100%, 100% 60%, 40% 0);
+    background-color: #ff9612;
+    top: -2px;
+    left: 242px;
+ } 
+ span p{
+     width: 65px;
+     height: 65px;
+     font-size: 25px;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: 'Racing Sans One', cursive; 
+     
+ }  
+ .spin {
+     position: absolute;
+     top: 43%;
+     left: 43%;
+     width: 75px;
+     height: 75px;
+     border-radius: 50%;
+     border: 2px solid #fff;
+     background-color: black;
+     color: #fff;
+     box-shadow: 0 5px 20px #000;
+     font-weight: bold;
+     font-size: 22px;
+     cursor: pointer;
+     animation: pulse 3s infinite;
+     
+
+ }
+@keyframes pulse {
+    0% {
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    transform: scale3d(1.09, 1.09, 1.09);
+    }
+    50% {
+    transform: scale3d(1, 1, 1);
+    }
+  } 
+ .spin:active {
+     width: 70px;
+     height: 70px;
+     font-size: 20px;
+     background: #ffe605;
+ } 
+
+footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: black;
+        padding: 1em;
+     font-size: 1em;
+     color: white;
+     height: 5em;
+}

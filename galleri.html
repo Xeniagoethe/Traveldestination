@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleri</title>
+    <link rel="stylesheet" href="galleri.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Billeder til opgave/Verdenskort.png">
+</head>
+
+<body>
+    <header>
+        <h1>Galleri</h1>
+    </header>
+
+
+    <ul class="menu">
+        <li> <a class="menuItem" href="index.html">Hjem</a></li>
+        <li> <a class="menuItem" href="galleri.html">Galleri</a></li>
+        <li> <a class="menuItem" href="Rejsehjulet.html">Rejsehjulet</a></li>
+    </ul>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+
+    <div class="row">
+        <div class="column">
+            <img src="Billeder til opgave/borabora.jfif" alt="BoraBora" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Billeder til opgave/capetown.jfif" alt="CapeTown" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Billeder til opgave/Neworleans.jfif" alt="NewOrleans" style="width:100%"
+                onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Billeder til opgave/kroatien.jfif" alt="Dubrovnik" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <footer>
+        <p>Bon voyage</p>
+        <p>Safe travels</p>
+        <p>God tur</p>
+        <p>Buen viaje</p>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="galleri.js"></script>
